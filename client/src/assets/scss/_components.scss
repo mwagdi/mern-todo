@@ -1,0 +1,56 @@
+.todos{
+    width: 600px;
+    &__item{
+        background: #9898ae;
+        color: $secondary;
+        padding: 1em;
+        margin-bottom: 1em;
+        border-radius: 3px;
+        &_title{
+            &.completed{
+                text-decoration: line-through;
+            }
+        }
+    }
+    a{
+        font-weight: $medium;
+        padding: 0.3em;
+        border-radius: 3px;
+        color: white;
+        opacity: 0.5;
+        transition: all 0.3s;
+        &.delete{
+            background: #ed0303;
+        }
+        &.done{
+            background: #03db03;
+            margin-right: 1em;
+        }
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+form{
+    margin-bottom: 1em;
+}
+input[type=text]{
+    background: transparent;
+    border: 1px solid $primary;
+    border-right: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 0 1em;
+    color: $primary;
+    &::placeholder{
+        color: rgba(184, 184, 209, 0.52);
+    }
+}
+input[type=submit]{
+    background: $primary;
+    border: none;
+    color: $secondary;
+    padding: 0.75em 1.25em;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}

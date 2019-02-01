@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700");
+html, body {
+  font-size: 16px;
+  color: #B8B8D1;
+  background: #54577C;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+a, input[type=submit] {
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-grow {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todos {
+  width: 600px;
+}
+
+.todos__item {
+  background: #9898ae;
+  color: #54577C;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 3px;
+}
+
+.todos__item_title.completed {
+  text-decoration: line-through;
+}
+
+.todos a {
+  font-weight: 500;
+  padding: 0.3em;
+  border-radius: 3px;
+  color: white;
+  opacity: 0.5;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.todos a.delete {
+  background: #ed0303;
+}
+
+.todos a.done {
+  background: #03db03;
+  margin-right: 1em;
+}
+
+.todos a:hover {
+  opacity: 1;
+}
+
+form {
+  margin-bottom: 1em;
+}
+
+input[type=text] {
+  background: transparent;
+  border: 1px solid #B8B8D1;
+  border-right: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 0 1em;
+  color: #B8B8D1;
+}
+
+input[type=text]::-webkit-input-placeholder {
+  color: rgba(184, 184, 209, 0.52);
+}
+
+input[type=text]:-ms-input-placeholder {
+  color: rgba(184, 184, 209, 0.52);
+}
+
+input[type=text]::-ms-input-placeholder {
+  color: rgba(184, 184, 209, 0.52);
+}
+
+input[type=text]::placeholder {
+  color: rgba(184, 184, 209, 0.52);
+}
+
+input[type=submit] {
+  background: #B8B8D1;
+  border: none;
+  color: #54577C;
+  padding: 0.75em 1.25em;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+/*# sourceMappingURL=app.css.map */
